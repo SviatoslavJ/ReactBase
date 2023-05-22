@@ -6,7 +6,7 @@ function WarningBanner(props) {
     return null;
   }
 
-  return <div className="warning">Предупреждение!</div>;
+  return <div className="warning">Warning!</div>;
 }
 
 class Page extends React.Component {
@@ -27,7 +27,7 @@ class Page extends React.Component {
       <div>
         <WarningBanner warn={this.state.showWarning} />
         <button onClick={this.handleToggleClick}>
-          {this.state.showWarning ? "Спрятать" : "Показать"}
+          {this.state.showWarning ? "Hide" : "Show"}
         </button>
       </div>
     );

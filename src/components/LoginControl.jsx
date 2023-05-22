@@ -2,19 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 function LoginButton(props) {
-  return <button onClick={props.onClick}>Войти</button>;
+  return <button onClick={props.onClick}>Log in</button>;
 }
 
 function LogoutButton(props) {
-  return <button onClick={props.onClick}>Выйти</button>;
+  return <button onClick={props.onClick}>Log out</button>;
 }
 
 function UserGreeting(props) {
-  return <h1>С возвращением!</h1>;
+  return <h1>Welcome back!</h1>;
 }
 
 function GuestGreeting(props) {
-  return <h1>Войдите, пожалуйста.</h1>;
+  return <h1>Come in, please.</h1>;
 }
 
 function Greeting(props) {

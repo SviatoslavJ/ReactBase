@@ -5,8 +5,6 @@ class Toggle extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isToggleOn: true };
-
-    // Эта привязка обязательна для работы `this` в колбэке.
     this.handleClick = this.handleClick.bind(this);
   }
 

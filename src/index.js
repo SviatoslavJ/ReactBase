@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Toggle from './toggle';
-import LoginControl from './loginControl';
-import Page from './warningBanner';
-import Calculator from './calculator';
+import App from './components/Clock';
+import Toggle from './components/Toggle';
+import LoginControl from './components/LoginControl';
+import Page from './components/WarningBanner';
+import Calculator from './components/Calculator';
+import SignUpDialog from './components/Dialog';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,5 +18,7 @@ root.render(
     <LoginControl/>
     <Page/>
     <Calculator/>
+    <SignUpDialog/>
   </React.StrictMode>
+
 );

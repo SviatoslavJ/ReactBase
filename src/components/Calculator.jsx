@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 
 function BoilingVerdict(props) {
   if (props.celsius >= 100) {
-    return <p>Вода закипит.</p>;
+    return <p>The water will boil.</p>;
   }
-  return <p>Вода не закипит.</p>;
+  return <p>Water won't boil.</p>;
 }
 
 function toCelsius(fahrenheit) {
@@ -27,8 +27,8 @@ function tryConvert(temperature, convert) {
 }
 
 const scaleNames = {
-  c: "Цельсия",
-  f: "Фаренгейта",
+  c: "Celsius",
+  f: "Fahrenheit",
 };
 
 class TemperatureInput extends React.Component {
@@ -46,7 +46,7 @@ class TemperatureInput extends React.Component {
     const scale = this.props.scale;
     return (
       <fieldset>
-        <legend>Введите градусы по шкале {scaleNames[scale]}:</legend>
+        <legend>Enter degrees on the scale {scaleNames[scale]}:</legend>
         <input value={temperature} onChange={this.handleChange} />
       </fieldset>
     );
