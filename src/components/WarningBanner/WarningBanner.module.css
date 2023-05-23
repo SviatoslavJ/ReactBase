@@ -1,0 +1,13 @@
+.warning{
+color: red;
+text-transform: uppercase;
+font-size: 40px;
+}
+
+.btn{
+  color: black;
+  background-color: red;
+  padding: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+}

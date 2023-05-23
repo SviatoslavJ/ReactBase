@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import styles from "./Calculator.module.css";
 
 function BoilingVerdict(props) {
   if (props.celsius >= 100) {
-    return <p>The water will boil.</p>;
+    return <p className={styles.p1}>The water will boil.</p>;
   }
-  return <p>Water won't boil.</p>;
+  return <p className={styles.p2}>Water won't boil.</p>;
 }
 
 function toCelsius(fahrenheit) {
@@ -46,8 +47,8 @@ class TemperatureInput extends React.Component {
     const scale = this.props.scale;
     return (
       <fieldset>
-        <legend>Enter degrees on the scale {scaleNames[scale]}:</legend>
-        <input value={temperature} onChange={this.handleChange} />
+        <legend className={styles.legend}>Enter degrees on the scale {scaleNames[scale]}:</legend>
+        <input className={styles.input} value={temperature} onChange={this.handleChange} />
       </fieldset>
     );
   }
@@ -78,7 +79,7 @@ class Calculator extends React.Component {
       scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
 
     return (
-      <div>
+      <div className={styles.div}>
         <TemperatureInput
           scale="c"
           temperature={celsius}

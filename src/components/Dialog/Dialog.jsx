@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import styles from "./Dialog.module.css";
 
 function FancyBorder(props) {
   return (
@@ -12,10 +13,10 @@ function FancyBorder(props) {
 function Dialog(props) {
   return (
     <FancyBorder color="blue">
-      <h1 className="Dialog-title">
+      <h1 className={styles.title}>
         {props.title}
       </h1>
-      <p className="Dialog-message">
+      <p className={styles.askNameText}>
         {props.message}
       </p>
       {props.children}
@@ -35,8 +36,8 @@ class SignUpDialog extends React.Component {
       <Dialog
        title="Mars exploration program"
        message="How can I call you?">
-        <input value={this.state.login} onChange={this.handleChange} />
-        <button onClick={this.handleSignUp}>Sign me up!</button>
+        <input className={styles.input} value={this.state.login} onChange={this.handleChange} />
+        <button className={styles.btn} onClick={this.handleSignUp}>Sign me up!</button>
       </Dialog>
     );
   }

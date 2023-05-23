@@ -1,0 +1,21 @@
+.h1{
+  color:darkorange;
+}
+
+.h2{
+  color:darkorange;
+}
+
+.loginbtn{
+background-color: darkorange;
+color:black;
+border-style: none;
+padding: 20px;
+}
+
+.logoutbtn{
+background-color: darkorange;
+color:black;
+border-style: none;
+padding: 20px;
+}

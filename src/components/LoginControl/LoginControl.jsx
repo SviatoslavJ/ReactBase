@@ -1,20 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import styles from "./LoginControl.module.css";
 
 function LoginButton(props) {
-  return <button onClick={props.onClick}>Log in</button>;
+  return <button className={styles.loginbtn} onClick={props.onClick}>Log in</button>;
 }
 
 function LogoutButton(props) {
-  return <button onClick={props.onClick}>Log out</button>;
+  return (
+    <button className={styles.logoutbtn} onClick={props.onClick}>
+      Log out
+    </button>
+  );
 }
 
 function UserGreeting(props) {
-  return <h1>Welcome back!</h1>;
+  return <h1 className={styles.h1}>Welcome back!</h1>;
 }
 
 function GuestGreeting(props) {
-  return <h1>Come in, please.</h1>;
+  return <h1 className={styles.h2}>Come in, please.</h1>;
 }
 
 function Greeting(props) {

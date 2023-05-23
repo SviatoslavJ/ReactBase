@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import styles from "./Clock.module.css";
 
 class Clock extends React.Component {
   constructor(props) {
@@ -23,8 +24,8 @@ class Clock extends React.Component {
   render() {
     return (
       <div>
-        <h1>This is a time right now</h1>
-        <h2>Now: {this.state.date.toLocaleTimeString()}.</h2>
+        <h1 className={styles.h1}>This is a time right now</h1>
+        <h2 className={styles.h2}>Now: {this.state.date.toLocaleTimeString()}.</h2>
       </div>
     );
   }

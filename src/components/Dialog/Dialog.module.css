@@ -1,0 +1,21 @@
+.title{
+  color: aqua;
+  font-size: 40px;
+}
+
+.askNameText{
+color: aqua;
+font-size: 30px;
+}
+
+.btn{
+  background-color:aqua;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.input{
+  height: 45px;
+  margin-right: 30px;
+  font-size: 30px;
+}

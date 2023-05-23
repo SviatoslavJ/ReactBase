@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/Clock';
-import Toggle from './components/Toggle';
-import LoginControl from './components/LoginControl';
-import Page from './components/WarningBanner';
-import Calculator from './components/Calculator';
-import SignUpDialog from './components/Dialog';
+import Clock from './components/Clock/Clock';
+import Toggle from './components/Toggle/Toggle';
+import LoginControl from './components/LoginControl/LoginControl';
+import Page from './components/WarningBanner/WarningBanner';
+import Calculator from './components/Calculator/Calculator';
+import SignUpDialog from './components/Dialog/Dialog';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Clock />
     <Toggle/>
     <LoginControl/>
     <Page/>
